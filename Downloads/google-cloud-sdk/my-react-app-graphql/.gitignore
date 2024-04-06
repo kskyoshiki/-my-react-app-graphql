@@ -1,14 +1,22 @@
-# 依存関係
-/node_modules
+# ノードモジュールとビルドディレクトリを無視
+node_modules/
+dist/
+build/
 
-# バージョン管理システム
-/.git
+# ログファイルとデータベースファイルを無視
+*.log
+*.sql
+*.sqlite
 
-# macOSのシステムファイル
+# OS 生成ファイルを無視
 .DS_Store
+Thumbs.db
 
-# テキストエディターの設定
+# テキストエディターやIDEの設定ファイルを無視
 .vscode/
 .idea/
+*.sublime-workspace
 
-# その他プロジェクトと無関係なファイルやディレクトリ
+# 特定のファイルを除外して無視
+!README.md
+
